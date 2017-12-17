@@ -11,14 +11,12 @@ namespace EasyTourYuriHugo.Models
         public int id { get; set; }
         public String nome { get; set; }
         public String criadaEm { get; set; }
-        public String atualizadaEm { get; set; }
 
-        public CategoriaRoteiro(int i, String n, String c, String a)
+        public CategoriaRoteiro(int i, String n, String c)
         {
             this.id = i;
             this.nome = n;
             this.criadaEm = c;
-            this.atualizadaEm = a;
         }
     }
 }

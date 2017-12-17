@@ -10,11 +10,22 @@ namespace EasyTourYuriHugo.ViewModels
 {
     public class CategoriasRoteiroVM
     {
+        public List<CategoriaRoteiro> listaJson { get; set; }
         public List<CategoriaRoteiro> listaCatRoteiros { get; set; }
 
         public CategoriasRoteiroVM()
         {
-            listaCatRoteiros = new CategoriasRoteiroService().getCategoriasRoteiro();
+            inicializarChamadaAsincrona();
+        }
+
+        public async Task inicializarChamadaAsincrona()
+        {
+            listaJson =  await new  CategoriasRoteiroService().buscarCategoriasRoteirosAsync();
+
+            foreach (CategoriaRoteiro c in listaJson) {
+                listaCatRoteiros.Add(new CategoriaRoteiro((int)c.id, c.nome, c.criadaEm));
+                System.Diagnostics.Debug.WriteLine("LISTA " + c.id + "\t" + c.nome + "\t" + c.criadaEm);
+            }
         }
     }
 }
