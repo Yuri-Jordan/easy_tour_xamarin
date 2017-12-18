@@ -6,9 +6,9 @@
              xmlns:Views="clr-namespace:EasyTourYuriHugo.Views">
 
     <TabbedPage.Children>
-        <Views:Roteiros Title="Roteiro"/>
+        <Views:Roteiros Title="Roteiros"/>
         <Views:Parceiros Title="Parceiros"/>
-        <Views:QuantoCusta Title="QuantoCusta"/>
+        <Views:GPS Title="Meus Lugares"/>
     </TabbedPage.Children>
 
 </TabbedPage>

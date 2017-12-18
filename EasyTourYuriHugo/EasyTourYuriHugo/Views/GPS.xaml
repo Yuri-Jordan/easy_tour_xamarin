@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyTourYuriHugo.Views.GPS">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button Text="Buscar Localização GPS" Clicked="buscarLocalicacao" />
+                <Label Text="Latitude :"/>
+                <Label x:Name="latitude"/>
+                <Label Text="Longitude :"/>
+                <Label x:Name="longitude"/>
+
+                <Button Text="Tirar Foto" Clicked="tirarFoto" />
+                <Label Text="Caminho da foto :"/>
+                <Label x:Name="caminhoFoto"/>
+
+                <Label Text="Foto :"/>
+                <Image x:Name="foto"/>
+                
+                <Entry x:Name="titulo_entry" Placeholder="Dê um título a esta foto..."/>
+                <Button Text="Salvar no banco" Clicked="salvarFotoBanco" />
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -333,6 +333,17 @@
           "System.Xml.XDocument": "4.0.11"
         }
       },
+      "Plugin.Permissions/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
       "runtime.native.System.IO.Compression/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -2316,6 +2327,31 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/4.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.0.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/2.4.0.280": {
         "type": "package",
         "compile": {
@@ -2333,6 +2369,24 @@
         "build": {
           "build/netstandard1.0/Xamarin.Forms.props": {},
           "build/netstandard1.0/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.5.0.121934": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "EasyTourYuriHugo/1.0.0": {
@@ -2617,6 +2671,17 @@
           "System.Threading.Timer": "4.0.1",
           "System.Xml.ReaderWriter": "4.0.11",
           "System.Xml.XDocument": "4.0.11"
+        }
+      },
+      "Plugin.Permissions/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -4757,6 +4822,31 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/4.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.0.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/2.4.0.280": {
         "type": "package",
         "compile": {
@@ -4774,6 +4864,24 @@
         "build": {
           "build/netstandard1.0/Xamarin.Forms.props": {},
           "build/netstandard1.0/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.5.0.121934": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "EasyTourYuriHugo/1.0.0": {
@@ -5059,6 +5167,17 @@
           "System.Threading.Timer": "4.0.1",
           "System.Xml.ReaderWriter": "4.0.11",
           "System.Xml.XDocument": "4.0.11"
+        }
+      },
+      "Plugin.Permissions/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -7234,6 +7353,31 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/4.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.0.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/2.4.0.280": {
         "type": "package",
         "compile": {
@@ -7251,6 +7395,24 @@
         "build": {
           "build/netstandard1.0/Xamarin.Forms.props": {},
           "build/netstandard1.0/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.5.0.121934": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "EasyTourYuriHugo/1.0.0": {
@@ -7538,6 +7700,17 @@
           "System.Threading.Timer": "4.0.1",
           "System.Xml.ReaderWriter": "4.0.11",
           "System.Xml.XDocument": "4.0.11"
+        }
+      },
+      "Plugin.Permissions/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -9684,6 +9857,31 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/4.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.0.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/2.4.0.280": {
         "type": "package",
         "compile": {
@@ -9701,6 +9899,24 @@
         "build": {
           "build/netstandard1.0/Xamarin.Forms.props": {},
           "build/netstandard1.0/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.5.0.121934": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "EasyTourYuriHugo/1.0.0": {
@@ -9989,6 +10205,17 @@
           "System.Threading.Timer": "4.0.1",
           "System.Xml.ReaderWriter": "4.0.11",
           "System.Xml.XDocument": "4.0.11"
+        }
+      },
+      "Plugin.Permissions/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -12170,6 +12397,31 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/4.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.0.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/2.4.0.280": {
         "type": "package",
         "compile": {
@@ -12187,6 +12439,24 @@
         "build": {
           "build/netstandard1.0/Xamarin.Forms.props": {},
           "build/netstandard1.0/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.5.0.121934": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "EasyTourYuriHugo/1.0.0": {
@@ -12474,6 +12744,17 @@
           "System.Threading.Timer": "4.0.1",
           "System.Xml.ReaderWriter": "4.0.11",
           "System.Xml.XDocument": "4.0.11"
+        }
+      },
+      "Plugin.Permissions/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -14620,6 +14901,31 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/4.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.0.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/2.4.0.280": {
         "type": "package",
         "compile": {
@@ -14637,6 +14943,24 @@
         "build": {
           "build/netstandard1.0/Xamarin.Forms.props": {},
           "build/netstandard1.0/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.5.0.121934": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "EasyTourYuriHugo/1.0.0": {
@@ -14925,6 +15249,17 @@
           "System.Threading.Timer": "4.0.1",
           "System.Xml.ReaderWriter": "4.0.11",
           "System.Xml.XDocument": "4.0.11"
+        }
+      },
+      "Plugin.Permissions/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -17106,6 +17441,31 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Geolocator/4.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.0.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/2.4.0.280": {
         "type": "package",
         "compile": {
@@ -17123,6 +17483,24 @@
         "build": {
           "build/netstandard1.0/Xamarin.Forms.props": {},
           "build/netstandard1.0/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/2.5.0.121934": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "build": {
+          "build/win81/Xamarin.Forms.Maps.props": {},
+          "build/win81/Xamarin.Forms.Maps.targets": {}
         }
       },
       "EasyTourYuriHugo/1.0.0": {
@@ -17442,6 +17820,41 @@
         "dotnet_library_license.txt",
         "netstandard.library.1.6.0.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Plugin.Permissions/2.0.1": {
+      "sha512": "R+V3nsj9HB23y8QiopTMp9nATp3jDTbbLSY9Zz/ofizn3JQtJxxrRCBBMnQohsNcqpAvGdZ+DcGBTmU32wUJ2Q==",
+      "type": "package",
+      "path": "plugin.permissions/2.0.1",
+      "files": [
+        "lib/MonoAndroid10/Plugin.Permissions.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Permissions.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Permissions.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Permissions.XML",
+        "lib/MonoAndroid10/Plugin.Permissions.dll",
+        "lib/MonoAndroid10/Plugin.Permissions.pdb",
+        "lib/UAP10/Plugin.Permissions.Abstractions.dll",
+        "lib/UAP10/Plugin.Permissions.Abstractions.pdb",
+        "lib/UAP10/Plugin.Permissions.Abstractions.xml",
+        "lib/UAP10/Plugin.Permissions.XML",
+        "lib/UAP10/Plugin.Permissions.dll",
+        "lib/UAP10/Plugin.Permissions.pdb",
+        "lib/UAP10/Plugin.Permissions.pri",
+        "lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Permissions.XML",
+        "lib/Xamarin.iOS10/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Permissions.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Permissions.deps.json",
+        "lib/netstandard1.0/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.pdb",
+        "lib/netstandard1.0/Plugin.Permissions.xml",
+        "plugin.permissions.2.0.1.nupkg.sha512",
+        "plugin.permissions.nuspec",
+        "readme.txt"
       ]
     },
     "runtime.any.System.Collections/4.0.11": {
@@ -23553,6 +23966,88 @@
         "xam.plugin.connectivity.nuspec"
       ]
     },
+    "Xam.Plugin.Geolocator/4.1.3": {
+      "sha512": "uSsz4Z9XC6L3XarUh+uxx/d6b5hntTNmU/xBOhNTIohhDYkSTKdE548UmUc03a+9ZYFpvVHTYa+p2A2agFxNKw==",
+      "type": "package",
+      "path": "xam.plugin.geolocator/4.1.3",
+      "files": [
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Geolocator.dll",
+        "lib/MonoAndroid10/Plugin.Geolocator.pdb",
+        "lib/MonoAndroid10/Plugin.Geolocator.xml",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.dll",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/UAP10/Plugin.Geolocator.XML",
+        "lib/UAP10/Plugin.Geolocator.dll",
+        "lib/UAP10/Plugin.Geolocator.pdb",
+        "lib/UAP10/Plugin.Geolocator.pri",
+        "lib/Xamarin.Mac20/Plugin.Geolocator.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Geolocator.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Geolocator.dll",
+        "lib/Xamarin.Mac20/Plugin.Geolocator.pdb",
+        "lib/Xamarin.Mac20/Plugin.Geolocator.xml",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.dll",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.pdb",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.xml",
+        "lib/XamarinTVOS/Plugin.Geolocator.Abstractions.dll",
+        "lib/XamarinTVOS/Plugin.Geolocator.Abstractions.pdb",
+        "lib/XamarinTVOS/Plugin.Geolocator.dll",
+        "lib/XamarinTVOS/Plugin.Geolocator.pdb",
+        "lib/netstandard1.0/Plugin.Geolocator.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Geolocator.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Geolocator.deps.json",
+        "lib/netstandard1.0/Plugin.Geolocator.dll",
+        "lib/netstandard1.0/Plugin.Geolocator.pdb",
+        "lib/netstandard1.0/Plugin.Geolocator.xml",
+        "readme.txt",
+        "xam.plugin.geolocator.4.1.3.nupkg.sha512",
+        "xam.plugin.geolocator.nuspec"
+      ]
+    },
+    "Xam.Plugin.Media/3.1.1": {
+      "sha512": "Iki30t2FZmpc9IWrlvxolqDBHMmijTINTnOkzYSMPZacrzW1U0U8+VHaCBzyfosd8Lx4XZHAaFjzdQcsXoqr3g==",
+      "type": "package",
+      "path": "xam.plugin.media/3.1.1",
+      "files": [
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Media.dll",
+        "lib/MonoAndroid10/Plugin.Media.pdb",
+        "lib/MonoAndroid10/Plugin.Media.xml",
+        "lib/UAP10/Plugin.Media.Abstractions.dll",
+        "lib/UAP10/Plugin.Media.Abstractions.pdb",
+        "lib/UAP10/Plugin.Media.Abstractions.xml",
+        "lib/UAP10/Plugin.Media.XML",
+        "lib/UAP10/Plugin.Media.dll",
+        "lib/UAP10/Plugin.Media.pdb",
+        "lib/UAP10/Plugin.Media.pri",
+        "lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Media.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Media.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Media.dll",
+        "lib/Xamarin.iOS10/Plugin.Media.xml",
+        "lib/netstandard1.0/Plugin.Media.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Media.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Media.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Media.deps.json",
+        "lib/netstandard1.0/Plugin.Media.dll",
+        "lib/netstandard1.0/Plugin.Media.pdb",
+        "lib/netstandard1.0/Plugin.Media.xml",
+        "lib/tizen40/Plugin.Media.Abstractions.dll",
+        "lib/tizen40/Plugin.Media.Abstractions.pdb",
+        "lib/tizen40/Plugin.Media.Abstractions.xml",
+        "lib/tizen40/Plugin.Media.deps.json",
+        "lib/tizen40/Plugin.Media.dll",
+        "lib/tizen40/Plugin.Media.pdb",
+        "readme.txt",
+        "xam.plugin.media.3.1.1.nupkg.sha512",
+        "xam.plugin.media.nuspec"
+      ]
+    },
     "Xamarin.Forms/2.4.0.280": {
       "sha512": "YzXTyRvhMv2kHgs6CGA89OVwUWrS05i7GW/OXl0vcn77OeJ4Zj08tErhc5bL6TAJYg4vWi+uMTWryO+J65U0yA==",
       "type": "package",
@@ -23740,6 +24235,73 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Maps/2.5.0.121934": {
+      "sha512": "AtrJeMU/Zaua70826Lx7t5s4885uiW+B+6QXe2IoNwMKc9nGOrG6yJv+C+/mGRx063jVgCsVhuG3/BDrmQc2nQ==",
+      "type": "package",
+      "path": "xamarin.forms.maps/2.5.0.121934",
+      "files": [
+        "build/win81/ARM/Xamarin.Forms.Maps.WinRT.Tablet.dll",
+        "build/win81/ARM/Xamarin.Forms.Maps.WinRT.Tablet.pri",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet.dll",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet.pri",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet/FormsTextBoxStyle.xbf",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet/Resources.xbf",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet/TabletResources.xbf",
+        "build/win81/ARM/Xamarin.Forms.Platform.WinRT.Tablet/Xamarin.Forms.Platform.WinRT.Tablet.xr.xml",
+        "build/win81/Xamarin.Forms.Maps.props",
+        "build/win81/Xamarin.Forms.Maps.targets",
+        "build/win81/x64/Xamarin.Forms.Maps.WinRT.Tablet.dll",
+        "build/win81/x64/Xamarin.Forms.Maps.WinRT.Tablet.pri",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet.dll",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet.pri",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet/FormsTextBoxStyle.xbf",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet/Resources.xbf",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet/TabletResources.xbf",
+        "build/win81/x64/Xamarin.Forms.Platform.WinRT.Tablet/Xamarin.Forms.Platform.WinRT.Tablet.xr.xml",
+        "build/win81/x86/Xamarin.Forms.Maps.WinRT.Tablet.dll",
+        "build/win81/x86/Xamarin.Forms.Maps.WinRT.Tablet.pri",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet.dll",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet.pri",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet/FormsTextBoxStyle.xbf",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet/Resources.xbf",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet/TabletResources.xbf",
+        "build/win81/x86/Xamarin.Forms.Platform.WinRT.Tablet/Xamarin.Forms.Platform.WinRT.Tablet.xr.xml",
+        "lib/MonoAndroid10/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Maps.xml",
+        "lib/WP80/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/WP80/Xamarin.Forms.Maps.WP8.dll",
+        "lib/WP80/Xamarin.Forms.Maps.dll",
+        "lib/WP80/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.Design.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.Maps.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0/Xamarin.Forms.Maps.dll",
+        "lib/win81/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/win81/Xamarin.Forms.Maps.dll",
+        "lib/win81/Xamarin.Forms.Maps.xml",
+        "lib/wpa81/Design/Xamarin.Forms.Maps.Design.dll",
+        "lib/wpa81/Xamarin.Forms.Maps.WinRT.Phone.dll",
+        "lib/wpa81/Xamarin.Forms.Maps.WinRT.Phone.pri",
+        "lib/wpa81/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.2.5.0.121934.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
+      ]
+    },
     "EasyTourYuriHugo/1.0.0": {
       "type": "project",
       "path": "../EasyTourYuriHugo/EasyTourYuriHugo.csproj",
@@ -23750,7 +24312,10 @@
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "Xam.Plugin.Connectivity >= 3.0.3",
+      "Xam.Plugin.Geolocator >= 4.1.3",
+      "Xam.Plugin.Media >= 3.1.1",
       "Xamarin.Forms >= 2.4.0.280",
+      "Xamarin.Forms.Maps >= 2.5.0.121934",
       "sqlite-net-pcl >= 1.4.118"
     ],
     "UAP,Version=v10.0.10586": []
@@ -23789,7 +24354,10 @@
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
       "sqlite-net-pcl": "1.4.118",
       "Xam.Plugin.Connectivity": "3.0.3",
-      "Xamarin.Forms": "2.4.0.280"
+      "Xam.Plugin.Geolocator": "4.1.3",
+      "Xam.Plugin.Media": "3.1.1",
+      "Xamarin.Forms": "2.4.0.280",
+      "Xamarin.Forms.Maps": "2.5.0.121934"
     },
     "frameworks": {
       "uap10.0.10586": {}
@@ -23814,5 +24382,23 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 2.5.0.121934 to 2.4.0.280. Reference the package directly from the project to select a different version. \r\n EasyTourYuriHugo.UWP -> Xamarin.Forms.Maps 2.5.0.121934 -> Xamarin.Forms (>= 2.5.0.121934) \r\n EasyTourYuriHugo.UWP -> Xamarin.Forms (>= 2.4.0.280)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586",
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    }
+  ]
 }

@@ -31,11 +31,11 @@ namespace EasyTourYuriHugo.Views
                 if(usuario != "" && senha != "")
                     camposPreenchidos = true;
                 else
-                    DisplayAlert("Campo vazio!", "Preencha os campos corretamente.", "OK");
+                    await DisplayAlert("Campo vazio!", "Preencha os campos corretamente.", "OK");
             }
             catch (Exception)
             {
-                DisplayAlert("Campo vazio!", "Preencha os campos corretamente.", "OK");
+                await DisplayAlert("Campo vazio!", "Preencha os campos corretamente.", "OK");
             }
 
             if(camposPreenchidos)
@@ -47,7 +47,7 @@ namespace EasyTourYuriHugo.Views
                 }
                 catch (Exception)
                 {
-                    DisplayAlert(usuario, "Já existe.", "OK");
+                    await DisplayAlert(usuario, "Já existe.", "OK");
                 }
             }
 
@@ -57,8 +57,8 @@ namespace EasyTourYuriHugo.Views
 
                 if (cadastrado.nome.Equals(usuario))
                 {
-                    DisplayAlert(usuario, "Cadastrado com sucesso!", "OK");
-                    Navigation.PopAsync();
+                    await DisplayAlert(usuario, "Cadastrado com sucesso!", "OK");
+                    await Navigation.PopAsync();
                 }
             }
 

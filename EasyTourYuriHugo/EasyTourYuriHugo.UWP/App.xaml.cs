@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Plugin.Media;
 
 namespace EasyTourYuriHugo.UWP
 {
@@ -37,7 +38,7 @@ namespace EasyTourYuriHugo.UWP
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs e)
         {
 
 #if DEBUG
@@ -57,6 +58,8 @@ namespace EasyTourYuriHugo.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
+
+                await CrossMedia.Current.Initialize();
 
                 Xamarin.Forms.Forms.Init(e);
 

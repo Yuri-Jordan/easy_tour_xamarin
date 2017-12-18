@@ -22,12 +22,24 @@ namespace EasyTourYuriHugo
             }
         }
 
+        static FotoDAO bancoFoto;
+        public static FotoDAO conexaoBancoFoto
+        {
+            get
+            {
+                if (bancoFoto == null)
+                    bancoFoto = new FotoDAO(DependencyService.Get<IFileHelper>().GetLocalFilePath("fotos.sqlite"));
+
+                return bancoFoto;
+            }
+        }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new EasyTourYuriHugo.Views.PaginaLogin());
-            //MainPage = new NavigationPage(new EasyTourYuriHugo.MainPage());
+            //MainPage = new NavigationPage(new EasyTourYuriHugo.Views.PaginaLogin());
+            MainPage = new NavigationPage(new EasyTourYuriHugo.MainPage());
         }
 
         protected override void OnStart()
