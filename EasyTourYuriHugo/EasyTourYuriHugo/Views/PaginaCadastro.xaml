@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyTourYuriHugo.Views.PaginaCadastro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbl_usuario" Text="Usuário"/>
+            <Entry x:Name="ntr_usuario" Placeholder="Digite seu usuário..."/>
+            <Label x:Name="lbl_senha" Text="Senha"/>
+            <Entry x:Name="ntr_senha" Placeholder="Digite sua senha..."></Entry>
+            <Button x:Name="btn_cadastrar" Text="Cadastrar" Clicked="cadastrar"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

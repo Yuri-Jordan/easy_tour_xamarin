@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EasyTourYuriHugo.Views.PaginaLogin">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbl_usuario" Text="Usuário"/>
+            <Entry x:Name="ntr_usuario" Placeholder="Digite seu usuário..."/>
+            <Label x:Name="lbl_senha" Text="Senha"/>
+            <Entry x:Name="ntr_senha" Placeholder="Digite sua senha..."/>
+            <Button x:Name="btn_login" Text="Entrar" Clicked="logar"/>
+            <Button x:Name="btn_criarConta" Text="Criar Conta" Clicked="criarConta"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
