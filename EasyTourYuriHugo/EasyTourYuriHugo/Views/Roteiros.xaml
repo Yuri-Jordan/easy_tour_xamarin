@@ -30,7 +30,7 @@
         </ListView.ItemTemplate>
     </ListView>-->
 
-    <ListView x:Name="categoriasRoteiroListView">
+    <ListView x:Name="listaCatRoteiros">
     <ListView.ItemTemplate>
         <DataTemplate>
             <ViewCell>

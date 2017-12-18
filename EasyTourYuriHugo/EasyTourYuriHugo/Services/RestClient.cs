@@ -26,6 +26,8 @@ namespace EasyTourYuriHugo.Services
         {
             var response = await client.GetStringAsync(this.url);
 
+            System.Diagnostics.Debug.WriteLine("RESPONSE :" + response);
+
             return JsonConvert.DeserializeObject<List<T>>(response);
          
         }

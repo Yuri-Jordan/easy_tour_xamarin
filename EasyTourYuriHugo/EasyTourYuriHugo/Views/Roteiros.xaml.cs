@@ -19,13 +19,6 @@ namespace EasyTourYuriHugo.Views
         public Roteiros()
         {
             InitializeComponent();
-            categoriasRoteiroListView.ItemsSource = r(); 
-
-        }
-
-        private List<CategoriaRoteiro> r()
-        {
-           return new CategoriasRoteiroVM().listaCatRoteiros;
         }
 
     }
