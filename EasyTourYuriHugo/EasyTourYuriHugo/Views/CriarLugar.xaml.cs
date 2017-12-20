@@ -112,11 +112,9 @@ namespace EasyTourYuriHugo.Views
 
                     await DisplayAlert(
                         retornado.titulo + "\n"
-                        + retornado.latitude + "\n"
-                        + retornado.longitude + "\n"
                         + retornado.caminho, "Foto salva", "OK");
 
-
+                    limparCampos();
                 }
                 catch (Exception)
                 {
@@ -125,6 +123,16 @@ namespace EasyTourYuriHugo.Views
                 
             }
             
+        }
+
+        private void limparCampos()
+        {
+            latitude.Text = "";
+            longitude.Text = "";
+
+            caminhoFoto.Text = "";
+            foto.Source = null;
+            titulo_entry.Text = "";
         }
     }
 }
