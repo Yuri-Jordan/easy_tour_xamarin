@@ -23,15 +23,15 @@ namespace EasyTourYuriHugo
             }
         }
 
-        static FotoDAO bancoFoto;
-        public static FotoDAO conexaoBancoFoto
+        static MeuLugarDAO bancoMeuLugar;
+        public static MeuLugarDAO conexaoBancoMeuLugar
         {
             get
             {
-                if (bancoFoto == null)
-                    bancoFoto = new FotoDAO(DependencyService.Get<IFileHelper>().GetLocalFilePath("fotos.sqlite"));
+                if (bancoMeuLugar == null)
+                    bancoMeuLugar = new MeuLugarDAO(DependencyService.Get<IFileHelper>().GetLocalFilePath("meuslugares.sqlite"));
 
-                return bancoFoto;
+                return bancoMeuLugar;
             }
         }
 

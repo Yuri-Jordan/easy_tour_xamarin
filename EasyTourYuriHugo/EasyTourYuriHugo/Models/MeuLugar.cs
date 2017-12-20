@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using Xamarin.Forms;
 
 namespace EasyTourYuriHugo.Models
 {
-    public class Foto
+    public class MeuLugar
     {
         [PrimaryKey, AutoIncrement]
         public int id { get; set; }
@@ -25,17 +26,22 @@ namespace EasyTourYuriHugo.Models
         [MaxLength(20)]
         public String longitude { get; set; }
 
-        public Foto()
+        [Ignore]
+        public ImageSource fotoLocal { get; set; }
+
+        public MeuLugar()
         {
 
         }
 
-        public Foto(String titulo, String caminho, String latitude, String longitude)
+        public MeuLugar(String titulo, String caminho, String latitude, String longitude)
         {
             this.titulo = titulo;
             this.caminho = caminho;
             this.latitude = latitude;
             this.longitude = longitude;
         }
+
+
     }
 }

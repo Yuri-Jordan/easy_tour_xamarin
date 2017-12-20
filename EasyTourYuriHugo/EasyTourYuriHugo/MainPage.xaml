@@ -7,6 +7,7 @@
 
     <TabbedPage.Children>
         <Views:Roteiros Title="Roteiros"/>
+        <Views:MeusLugares Title="Meus Lugares"/>
         <Views:UsuariosEmBanco Title="Usuários"/>
         <Views:CriarLugar Title="Criar Lugar"/>
             

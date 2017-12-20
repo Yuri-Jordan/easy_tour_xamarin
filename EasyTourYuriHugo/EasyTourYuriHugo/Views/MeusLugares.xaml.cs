@@ -6,16 +6,39 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.Maps;
+using EasyTourYuriHugo.Models;
+using System.Collections.ObjectModel;
+using Android.Graphics;
 
 namespace EasyTourYuriHugo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MeusLugares : ContentPage
     {
+        ObservableCollection<MeuLugar> lugares = new ObservableCollection<MeuLugar>();
+
         public MeusLugares()
         {
             InitializeComponent();
             //iniciarMapa();
+            lista.ItemsSource = lugares;
+            popularLista(lugares);
+        }
+
+        private async void popularLista(ObservableCollection<MeuLugar> lugares)
+        {
+            List<MeuLugar> lugaresDoBanco = await App.conexaoBancoMeuLugar.buscarMeusLugares();
+
+            foreach (MeuLugar ml in lugaresDoBanco)
+            {
+                System.Diagnostics.Debug.WriteLine("LISTA :" + ml.titulo);
+
+                var meuLugar = new MeuLugar(ml.titulo, ml.caminho, ml.latitude, ml.longitude);
+                meuLugar.fotoLocal = ImageSource.FromFile(ml.caminho.Trim());
+
+                lugares.Add(meuLugar);
+            }
+            // fotoLocal.Source = ImageSource.FromFile(lugares[0].caminho.Trim());
         }
 
         private void iniciarMapa()

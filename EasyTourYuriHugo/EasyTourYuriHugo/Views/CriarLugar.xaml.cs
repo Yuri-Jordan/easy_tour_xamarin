@@ -33,8 +33,8 @@ namespace EasyTourYuriHugo.Views
 
             var localizacao = await gps.GetPositionAsync();
 
-            latitude.Text = latitudeFoto = localizacao.Latitude.ToString();
-            longitude.Text = longitudeFoto = localizacao.Longitude.ToString();
+            latitude.Text = latitudeFoto = localizacao.Latitude.ToString().Trim();
+            longitude.Text = longitudeFoto = localizacao.Longitude.ToString().Trim();
         }
 
         async void tirarFoto(object sender, EventArgs e)
@@ -93,7 +93,7 @@ namespace EasyTourYuriHugo.Views
                 try
                 {
                     camposPreenchidos = false;
-                    await App.conexaoBancoFoto.salvarFoto(new Models.Foto(titulo, caminhoFotoGlobal.Trim(), latitudeFoto, longitudeFoto));
+                    await App.conexaoBancoMeuLugar.salvarMeuLugar(new Models.MeuLugar(titulo, caminhoFotoGlobal.Trim(), latitudeFoto.Trim(), longitudeFoto.Trim()));
                     fotoCadastrada = true;
                 }
                 catch (Exception)
@@ -108,7 +108,7 @@ namespace EasyTourYuriHugo.Views
                 try
                 {
                     fotoCadastrada = false;
-                    var retornado = await App.conexaoBancoFoto.buscarFoto(titulo);
+                    var retornado = await App.conexaoBancoMeuLugar.buscarMeuLugar(titulo);
 
                     await DisplayAlert(
                         retornado.titulo + "\n"
