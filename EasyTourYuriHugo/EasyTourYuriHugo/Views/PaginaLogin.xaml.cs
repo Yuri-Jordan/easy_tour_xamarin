@@ -47,6 +47,7 @@ namespace EasyTourYuriHugo.Views
             {
                 try
                 {
+                    camposPreenchidos = false;
                     usuarioRetornado = await App.conexaoBancoUsuario.buscarUsuario(usuario);
                     usuarioCadastrado = true;
                 }
@@ -60,6 +61,7 @@ namespace EasyTourYuriHugo.Views
             {
                 if (usuarioRetornado.nome.Equals(usuario) && usuarioRetornado.senha.Equals(senha))
                 {
+                    usuarioCadastrado = false;
                     await DisplayAlert(usuario, "Logando...", "OK");
                     await Navigation.PushAsync( new MainPage());
                 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Media;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,6 +21,9 @@ namespace EasyTourYuriHugo.UWP
         public MainPage()
         {
             this.InitializeComponent();
+
+            CrossMedia.Current.Initialize();
+            Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
             LoadApplication(new EasyTourYuriHugo.App());
         }

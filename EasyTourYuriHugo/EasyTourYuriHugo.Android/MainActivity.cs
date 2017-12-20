@@ -19,6 +19,9 @@ namespace EasyTourYuriHugo.Droid
             await CrossMedia.Current.Initialize();
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            Xamarin.FormsMaps.Init(this, bundle);
+
             LoadApplication(new App());
         }
     }

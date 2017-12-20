@@ -2,13 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EasyTourYuriHugo.Views.Roteiros"
-             xmlns:ViewModels="clr-namespace:EasyTourYuriHugo.ViewModels;assembly=EasyTourYuriHugo">
+             xmlns:ViewModels="clr-namespace:EasyTourYuriHugo.ViewModels;assembly=EasyTourYuriHugo"
+             xmlns:local="clr-namespace:EasyTourYuriHugo;assembly=EasyTourYuriHugo"
+            >
 
-   <ContentPage.BindingContext>
-        <ViewModels:CategoriasRoteiroVM/>
-    </ContentPage.BindingContext>
 
-    <!--<ListView x:Name="categoriasRoteiroListView" HasUnevenRows="True" Margin="20">
+    <ListView x:Name="lista" HasUnevenRows="True" Margin="20">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
@@ -20,7 +19,7 @@
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
 
-                        <Image Margin="5" HeightRequest="100" WidthRequest="100" Grid.RowSpan="2" Source="https://xamarin.com/content/images/pages/forms/example-app.png"/>
+                        <Image Margin="5" HeightRequest="100" WidthRequest="100" Grid.RowSpan="2" Source="logoeasytourbrasil.png"/>
                         <Label FontSize="Medium" Grid.Column="1" Grid.Row="0" Text="{Binding nome}"/>
                         <Label VerticalTextAlignment="Start" VerticalOptions="Start" Grid.Column="1" Grid.Row="1" Text="{Binding criadaEm}"/>
 
@@ -28,17 +27,14 @@
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
-    </ListView>-->
+    </ListView>
 
-    <ListView x:Name="listaCatRoteiros" ItemsSource="listaCatRoteiros">
-    <ListView.ItemTemplate>
-        <DataTemplate>
-            <ViewCell>
-                <ViewCell.View>
-                    <Label Text="{Binding nome}" />
-                </ViewCell.View>
-            </ViewCell>
-        </DataTemplate>
-    </ListView.ItemTemplate>
-</ListView>
+    <!--<ListView x:Name="lista">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding nome}" />
+               
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>-->
 </ContentPage>

@@ -14,14 +14,24 @@ namespace EasyTourYuriHugo.ViewModels
 
         public CategoriasRoteiroVM()
         {
-            inicializarChamadaAsincrona();
+            //inicializarChamadaAsincrona();
         }
 
-        public async Task inicializarChamadaAsincrona()
+        //public async Task inicializarChamadaAsincrona()
+        //{
+        //    listaCatRoteiros =  await new CategoriasRoteiroService().buscarCategoriasRoteirosAsync();
+
+        //    System.Diagnostics.Debug.WriteLine("LISTA :" + listaCatRoteiros[1].nome);
+
+        //}
+        public async Task<List<CategoriaRoteiro>> buscarRoteiros()
         {
-            listaCatRoteiros =  await new CategoriasRoteiroService().buscarCategoriasRoteirosAsync();
+            listaCatRoteiros = await new CategoriasRoteiroService().buscarCategoriasRoteirosAsync();
 
             System.Diagnostics.Debug.WriteLine("LISTA :" + listaCatRoteiros[1].nome);
+
+            return listaCatRoteiros;
+
         }
     }
 }

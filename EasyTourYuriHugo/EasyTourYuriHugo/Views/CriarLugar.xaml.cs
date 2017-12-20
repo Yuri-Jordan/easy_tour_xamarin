@@ -12,13 +12,16 @@ using Plugin.Media;
 namespace EasyTourYuriHugo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GPS : ContentPage
+    public partial class CriarLugar : ContentPage
     {
         String caminhoFotoGlobal = "";
         String latitudeFoto = "";
         String longitudeFoto = "";
 
-        public GPS()
+        bool camposPreenchidos = false;
+        bool fotoCadastrada = false;
+
+        public CriarLugar()
         {
             InitializeComponent();
         }
@@ -70,20 +73,58 @@ namespace EasyTourYuriHugo.Views
 
         async void salvarFotoBanco(object sender, EventArgs e)
         {
-            var titulo = titulo_entry.Text.Trim();
-
-            await App.conexaoBancoFoto.salvarFoto(new Models.Foto(titulo, caminhoFotoGlobal.Trim(), latitudeFoto, longitudeFoto));
-
-            var retornado = await App.conexaoBancoFoto.buscarFoto(titulo);
-
-            if(retornado != null)
+            var titulo = "";
+            try
             {
-                await DisplayAlert(
-                    retornado.titulo + "\n"
-                    + retornado.latitude + "\n"
-                    +retornado.longitude + "\n"
-                    +retornado.caminho, "Foto salva", "OK");
+                titulo = titulo_entry.Text.Trim();
+
+                if (titulo != "")
+                    camposPreenchidos = true;
+                else
+                    await DisplayAlert("Campo vazio!", "Dê um título a foto.", "OK");
             }
+            catch (Exception)
+            {
+                await DisplayAlert("Campo vazio!", "Dê um título a foto.", "OK");
+            }
+
+            if (camposPreenchidos)
+            {
+                try
+                {
+                    camposPreenchidos = false;
+                    await App.conexaoBancoFoto.salvarFoto(new Models.Foto(titulo, caminhoFotoGlobal.Trim(), latitudeFoto, longitudeFoto));
+                    fotoCadastrada = true;
+                }
+                catch (Exception)
+                {
+                    await DisplayAlert(titulo, "Já existe.", "OK");
+                }
+            }
+
+            if (fotoCadastrada)
+            {
+
+                try
+                {
+                    fotoCadastrada = false;
+                    var retornado = await App.conexaoBancoFoto.buscarFoto(titulo);
+
+                    await DisplayAlert(
+                        retornado.titulo + "\n"
+                        + retornado.latitude + "\n"
+                        + retornado.longitude + "\n"
+                        + retornado.caminho, "Foto salva", "OK");
+
+
+                }
+                catch (Exception)
+                {
+                    await DisplayAlert(titulo, "Foto não encontrada.", "OK");
+                }
+                
+            }
+            
         }
     }
 }

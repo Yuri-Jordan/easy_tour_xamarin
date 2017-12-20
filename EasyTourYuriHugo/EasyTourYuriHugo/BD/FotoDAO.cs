@@ -16,7 +16,7 @@ namespace EasyTourYuriHugo.BD
         {
             conexao = new SQLiteAsyncConnection(caminhoBD);
 
-            conexao.DropTableAsync<Usuario>().Wait();
+            conexao.DropTableAsync<Foto>().Wait();
             conexao.CreateTableAsync<Foto>().Wait();
 
         }

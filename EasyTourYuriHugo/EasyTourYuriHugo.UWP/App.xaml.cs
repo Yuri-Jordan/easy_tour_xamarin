@@ -59,7 +59,6 @@ namespace EasyTourYuriHugo.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                await CrossMedia.Current.Initialize();
 
                 Xamarin.Forms.Forms.Init(e);
 
