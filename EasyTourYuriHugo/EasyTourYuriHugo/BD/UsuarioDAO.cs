@@ -31,10 +31,13 @@ namespace EasyTourYuriHugo.BD
 
         public async Task<Usuario> buscarUsuario(String nome)
         {
-            var retornado = await conexao.Table<Usuario>().Where(usuario => usuario.nome.Equals(nome)).FirstAsync();
-            System.Diagnostics.Debug.WriteLine("RETORNADO :" + retornado.nome);
+            return await conexao.Table<Usuario>().Where(usuario => usuario.nome.Equals(nome)).FirstAsync();
 
-            return retornado;
+        }
+
+        public Task<List<Usuario>> buscarUsuarios()
+        {
+            return conexao.Table<Usuario>().ToListAsync();
         }
     }
 }

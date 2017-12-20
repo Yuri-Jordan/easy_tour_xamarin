@@ -63,11 +63,11 @@
     <Compile Include="Views\PaginaLogin.xaml.cs">
       <DependentUpon>PaginaLogin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Parceiros.xaml.cs">
-      <DependentUpon>Parceiros.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Roteiros.xaml.cs">
       <DependentUpon>Roteiros.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UsuariosEmBanco.xaml.cs">
+      <DependentUpon>UsuariosEmBanco.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -140,16 +140,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="imagens\" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Views\Roteiros.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\Parceiros.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -174,6 +165,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\MeusLugares.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\UsuariosEmBanco.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

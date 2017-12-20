@@ -20,19 +20,18 @@ namespace EasyTourYuriHugo.Views
 
         private void iniciarMapa()
         {
-            var mapa = new Map(MapSpan.FromCenterAndRadius(
-                new Position(454, 4654),
-                Distance.FromMiles(0.5)))
+            var map = new Map(
+            MapSpan.FromCenterAndRadius(
+                    new Position(37, -122), Distance.FromMiles(0.3)))
             {
                 IsShowingUser = true,
+                HeightRequest = 100,
+                WidthRequest = 960,
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
-
-            //var stack = new StackLayout { Spacing = 0 };
-            //stack.Children.Add(mapa);
-            //Content = stack;
-
-            pingarNoMapa();
+            var stack = new StackLayout { Spacing = 0 };
+            stack.Children.Add(map);
+            Content = stack;
         }
 
         private void pingarNoMapa()
