@@ -14,8 +14,8 @@
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
 
-                        <Label FontSize="Medium" Grid.Column="1" Grid.Row="0" Text="{Binding nome}"/>
-
+                        <Label FontSize="Medium" Grid.Column="0" Grid.Row="0" TextColor="Green" Text="{Binding nome}"/>
+                        <Label FontSize="Small" Grid.Column="1" Grid.Row="0" Text="{Binding senha}"/>
                     </Grid>
                 </ViewCell>
             </DataTemplate>

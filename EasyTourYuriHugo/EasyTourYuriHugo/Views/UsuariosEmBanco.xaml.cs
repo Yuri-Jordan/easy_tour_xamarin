@@ -29,7 +29,7 @@ namespace EasyTourYuriHugo.Views
 
             foreach (Usuario usu in usuariosDoBanco)
             {
-                System.Diagnostics.Debug.WriteLine("LISTA :" + usu.nome);
+                System.Diagnostics.Debug.WriteLine("LISTA : Usuário - " + usu.nome + " | Senha - " + usu.senha);
                 usuarios.Add(new Usuario(usu.nome, usu.senha));
             }
         }
