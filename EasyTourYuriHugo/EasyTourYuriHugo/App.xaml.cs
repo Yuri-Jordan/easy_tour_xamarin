@@ -39,8 +39,8 @@ namespace EasyTourYuriHugo
         {
             InitializeComponent();
 
-            //MainPage = new NavigationPage(new EasyTourYuriHugo.Views.PaginaLogin());
-            MainPage = new NavigationPage(new EasyTourYuriHugo.MainPage());
+            MainPage = new NavigationPage(new EasyTourYuriHugo.Views.PaginaLogin());
+            //MainPage = new NavigationPage(new EasyTourYuriHugo.MainPage());
         }
 
         protected override void OnStart()

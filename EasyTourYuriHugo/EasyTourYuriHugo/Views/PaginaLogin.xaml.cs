@@ -20,6 +20,17 @@ namespace EasyTourYuriHugo.Views
 			InitializeComponent ();
 		}
 
+        public PaginaLogin(Usuario usuario)
+        {
+            InitializeComponent();
+
+            if (usuario != null)
+            {
+                ntr_usuario.Text = usuario.nome;
+                ntr_senha.Text = usuario.senha;
+            }
+        }
+
 
         async void logar(object sender, EventArgs e)
         {

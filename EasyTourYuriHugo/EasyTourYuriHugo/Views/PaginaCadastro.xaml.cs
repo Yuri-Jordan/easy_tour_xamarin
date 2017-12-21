@@ -58,7 +58,8 @@ namespace EasyTourYuriHugo.Views
                 if (cadastrado.nome.Equals(usuario))
                 {
                     await DisplayAlert(usuario, "Cadastrado com sucesso!", "OK");
-                    await Navigation.PopAsync();
+                    await Navigation.PushAsync(new PaginaLogin(cadastrado));
+                    
                 }
             }
 
