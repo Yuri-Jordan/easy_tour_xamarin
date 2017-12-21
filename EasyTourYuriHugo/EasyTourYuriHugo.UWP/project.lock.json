@@ -24380,12 +24380,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\yuri\\source\\repos\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo.UWP\\EasyTourYuriHugo.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\yuri\\Desktop\\easy_tour_xamarin\\EasyTourYuriHugo\\EasyTourYuriHugo.UWP\\EasyTourYuriHugo.UWP.csproj",
       "projectName": "EasyTourYuriHugo.UWP",
-      "projectPath": "C:\\Users\\yuri\\source\\repos\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo.UWP\\EasyTourYuriHugo.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\yuri\\source\\repos\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo.UWP\\project.json",
+      "projectPath": "C:\\Users\\yuri\\Desktop\\easy_tour_xamarin\\EasyTourYuriHugo\\EasyTourYuriHugo.UWP\\EasyTourYuriHugo.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\yuri\\Desktop\\easy_tour_xamarin\\EasyTourYuriHugo\\EasyTourYuriHugo.UWP\\project.json",
       "packagesPath": "C:\\Users\\yuri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yuri\\source\\repos\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo.UWP\\obj\\",
+      "outputPath": "C:\\Users\\yuri\\Desktop\\easy_tour_xamarin\\EasyTourYuriHugo\\EasyTourYuriHugo.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\yuri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -24398,8 +24398,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\yuri\\source\\repos\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo.csproj": {
-              "projectPath": "C:\\Users\\yuri\\source\\repos\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo.csproj"
+            "C:\\Users\\yuri\\Desktop\\easy_tour_xamarin\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo.csproj": {
+              "projectPath": "C:\\Users\\yuri\\Desktop\\easy_tour_xamarin\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo.csproj"
             }
           }
         }

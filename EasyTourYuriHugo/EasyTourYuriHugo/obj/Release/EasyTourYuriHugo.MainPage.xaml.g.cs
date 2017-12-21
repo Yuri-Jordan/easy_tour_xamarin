@@ -11,8 +11,8 @@
 namespace EasyTourYuriHugo {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\yuri\\source\\repos\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo\\Mai" +
-        "nPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\yuri\\Desktop\\easy_tour_xamarin\\EasyTourYuriHugo\\EasyTourYuriHugo\\MainPag" +
+        "e.xaml")]
     public partial class MainPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

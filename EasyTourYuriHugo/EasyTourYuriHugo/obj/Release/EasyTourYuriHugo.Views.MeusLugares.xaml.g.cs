@@ -11,8 +11,8 @@
 namespace EasyTourYuriHugo.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\yuri\\source\\repos\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo\\Vie" +
-        "ws\\MeusLugares.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\yuri\\Desktop\\easy_tour_xamarin\\EasyTourYuriHugo\\EasyTourYuriHugo\\Views\\M" +
+        "eusLugares.xaml")]
     public partial class MeusLugares : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

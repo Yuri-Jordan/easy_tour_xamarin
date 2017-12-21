@@ -11,8 +11,8 @@
 namespace EasyTourYuriHugo {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\yuri\\source\\repos\\EasyTourYuriHugo\\EasyTourYuriHugo\\EasyTourYuriHugo\\App" +
-        ".xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\yuri\\Desktop\\easy_tour_xamarin\\EasyTourYuriHugo\\EasyTourYuriHugo\\App.xam" +
+        "l")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
