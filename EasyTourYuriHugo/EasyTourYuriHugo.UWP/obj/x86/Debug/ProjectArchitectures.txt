@@ -1,0 +1,2 @@
+C:\Users\yuri\source\repos\EasyTourYuriHugo\EasyTourYuriHugo\EasyTourYuriHugo.UWP\EasyTourYuriHugo.UWP.csproj;x86
+C:\Users\yuri\source\repos\EasyTourYuriHugo\EasyTourYuriHugo\EasyTourYuriHugo\EasyTourYuriHugo.csproj;neutral
